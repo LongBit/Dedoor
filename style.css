@@ -75,3 +75,12 @@ a:hover {
   margin: 10px;
   border-radius: 20px;
 }
+
+@media screen and (max-width: 1000px) {
+  .main-grid {
+      grid-template-areas: 
+        "main-content main-content"
+        "left-footer right-footer";
+
+    } 
+  }
