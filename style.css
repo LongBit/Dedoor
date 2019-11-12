@@ -1,0 +1,90 @@
+<<<<<<< Updated upstream
+=======
+html, body {
+  overflow: hidden;
+}
+
+.middlegrid {
+  width: 33.33%;
+  text-align: center;
+  color: white;
+}
+
+.rightgrid {
+  width: 33.33%;
+}
+
+a:hover {
+  color: green !important;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 90% 10%;
+  grid-template-areas: 
+    "main-menu main-content"
+    "left-footer right-footer";
+  height: 100%;
+} 
+
+.main-grid .main-menu {
+  grid-area: main-menu;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.main-grid .main-content {
+  grid-area: main-content;
+  background: url('https://cdn.pixabay.com/photo/2016/12/26/17/28/food-1932466_1280.jpg'); 
+  background-size: cover;
+  overflow-y: scroll;
+  color: white;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  border-radius: 0px;
+  padding: 20px;
+}
+
+.main-grid .right-footer {
+  grid-area: right-footer;
+  display: flex;
+  flex-direction: column;
+  background: rgb(85, 85, 85);
+  justify-content: center;
+  align-items: center;
+}
+
+.main-grid .left-footer {
+  grid-area: left-footer;
+  background: rgb(85, 85, 85);
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 10px;
+}
+
+.left-footer > .footer-logo {
+  background: url('dedoor.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+}
+
+.main-content > .box {
+  width: calc(50% - 20px);
+  display: inline-block;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .main-grid {
+        grid-template-areas: 
+          "main-content main-content"
+          "left-footer right-footer";
+
+      } 
+}
+>>>>>>> Stashed changes
