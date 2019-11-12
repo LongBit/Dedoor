@@ -1,0 +1,23 @@
+.leftgrid {
+  width: 33.33%;
+  height: 100%;
+  display: inline-block;
+}
+
+.middlegrid {
+  display: inline-block;
+  width: 33.33%;
+  text-align: center;
+  height: 100%;
+
+}
+
+.rightgrid {
+  width: 33.33%;
+  height: 100%;
+  display: inline-block;
+}
+
+a:hover {
+  background-color: green;
+}
